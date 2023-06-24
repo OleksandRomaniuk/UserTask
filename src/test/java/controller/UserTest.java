@@ -108,8 +108,8 @@ public class UserTest {
 
 		long userId = 1;
 		User user = User.builder()
-				.name("Ramesh")
-				.email("Fadatare")
+				.name("Alex")
+				.email("Alex")
 				.build();
 		given(userService.getUserById(userId)).willReturn(Optional.of(user));
 
@@ -144,8 +144,8 @@ public class UserTest {
 		long userId = 1;
 
 		User updatedUser = User.builder()
-				.name("Ramesh2")
-				.email("Fadatare2")
+				.name("Alex2")
+				.email("Alex2")
 				.build();
 		given(userService.getUserById(userId)).willReturn(Optional.empty());
 		given(userService.updateUser(any(User.class)))
